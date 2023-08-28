@@ -1,4 +1,4 @@
-# {{ cookiecutter.package_name }}
+# {{ cookiecutter.github_repo }}
 
 {{ cookiecutter.short_description }}
 
@@ -7,7 +7,7 @@
 You can install the package via pip:
 
 ```bash
-pip install {{ cookiecutter.package_name }}
+pip install {{ cookiecutter.github_repo }}
 ```
 
 ## Usage

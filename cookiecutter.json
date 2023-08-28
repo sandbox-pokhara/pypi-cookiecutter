@@ -2,6 +2,7 @@
   "full_name": "John Doe",
   "email": "john@example.com",
   "github_username": "johndoe",
-  "package_name": "my-package",
+  "github_repo": "my-package",
+  "package_name": "my_package",
   "short_description": "A short description."
 }
