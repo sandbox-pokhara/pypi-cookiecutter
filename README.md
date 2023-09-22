@@ -1,6 +1,6 @@
 # pypi-cookiecutter
 
-{{ cookiecutter.short_description }}
+Cookiecutter template for pypi package
 
 ## Usage
 
