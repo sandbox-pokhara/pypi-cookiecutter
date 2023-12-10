@@ -7,7 +7,7 @@
 You can install the package via pip:
 
 ```bash
-pip install {{ cookiecutter.github_repo }}
+pip install {{ cookiecutter.pypi_project }}
 ```
 
 ## Usage

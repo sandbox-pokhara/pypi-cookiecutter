@@ -2,7 +2,8 @@
   "full_name": "John Doe",
   "email": "john@example.com",
   "github_username": "johndoe",
-  "github_repo": "my-package",
   "package_name": "my_package",
+  "github_repo": "{{ cookiecutter.package_name.lower().replace('_', '-') }}",
+  "pypi_project": "{{ cookiecutter.package_name.lower().replace('_', '-') }}",
   "short_description": "A short description."
 }
