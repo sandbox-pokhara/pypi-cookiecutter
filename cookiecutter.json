@@ -4,6 +4,6 @@
   "github_username": "johndoe",
   "package_name": "my_package",
   "github_repo": "{{ cookiecutter.package_name.lower().replace('_', '-') }}",
-  "pypi_project": "{{ cookiecutter.package_name.lower().replace('_', '-') }}",
-  "short_description": "A short description."
+  "pypi_project": "{{ cookiecutter.github_repo }}",
+  "short_description": "A short description"
 }
