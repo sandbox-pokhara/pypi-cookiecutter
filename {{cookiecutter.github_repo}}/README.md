@@ -6,7 +6,7 @@
 
 You can install the package via pip:
 
-```bash
+```
 pip install {{ cookiecutter.pypi_project }}
 ```
 
