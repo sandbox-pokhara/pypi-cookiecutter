@@ -35,4 +35,5 @@ line-length = 79
 preview = true
 
 [tool.pyright]
+include = ["{{ cookiecutter.package_name }}", "test.py"]
 typeCheckingMode = "strict"
