@@ -4,8 +4,6 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "{{ cookiecutter.pypi_project }}"
-version = "1.0.0"
-dependencies = []
 requires-python = ">=3"
 authors = [
   { name = "{{ cookiecutter.full_name }}", email = "{{ cookiecutter.email }}" },
@@ -15,6 +13,8 @@ readme = "README.md"
 license = { file = "LICENSE" }
 keywords = []
 classifiers = ["Programming Language :: Python :: 3"]
+dynamic = ["version", "dependencies"]
+
 
 [project.urls]
 Homepage = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.github_repo }}"
@@ -25,6 +25,10 @@ include-package-data = true
 
 [tool.setuptools.package-dir]
 "{{ cookiecutter.package_name }}" = "{{ cookiecutter.package_name }}"
+
+[tool.setuptools.dynamic]
+version = { attr = "{{cookiecutter.package_name}}.__version__" }
+dependencies = { file = "requirements.txt" }
 
 [tool.isort]
 line_length = 79
