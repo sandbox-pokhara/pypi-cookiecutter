@@ -6,5 +6,9 @@
   "github_repo": "{{ cookiecutter.package_name.lower().replace('_', '-') }}",
   "pypi_project": "{{ cookiecutter.github_repo }}",
   "short_description": "A short description",
-  "add_publish_workflow": true
+  "add_publish_workflow": true,
+  "_copy_without_render": [
+    ".github/workflows/pre-commit.yml",
+    ".github/workflows/python-publish.yml"
+  ]
 }
