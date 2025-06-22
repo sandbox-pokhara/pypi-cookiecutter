@@ -13,7 +13,11 @@ readme = "README.md"
 license = { file = "LICENSE" }
 keywords = []
 classifiers = ["Programming Language :: Python :: 3"]
-dynamic = ["version", "dependencies"]
+dependencies = []
+dynamic = ["version"]
+
+[project.optional-dependencies]
+pre-commit = ["pre-commit"]
 
 
 [project.urls]
@@ -28,7 +32,6 @@ include-package-data = true
 
 [tool.setuptools.dynamic]
 version = { attr = "{{cookiecutter.package_name}}.__version__" }
-dependencies = { file = "requirements.txt" }
 
 [tool.isort]
 profile = "black"
@@ -42,6 +45,6 @@ enable-unstable-feature = ["string_processing"]
 
 [tool.pyright]
 venvPath = "."
-venv = "venv"
+venv = ".venv"
 include = ["{{ cookiecutter.package_name }}", "test.py"]
 typeCheckingMode = "strict"
