@@ -45,6 +45,6 @@ enable-unstable-feature = ["string_processing"]
 
 [tool.pyright]
 venvPath = "."
-venv = ".venv"
+venv = "venv"
 include = ["{{ cookiecutter.package_name }}", "test.py"]
 typeCheckingMode = "strict"
