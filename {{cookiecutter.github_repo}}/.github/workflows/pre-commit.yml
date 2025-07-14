@@ -27,13 +27,11 @@ jobs:
           key: pre-commit-${{ runner.os }}-${{ hashFiles('.pre-commit-config.yaml') }}
 
       - name: Install project dependencies for pyright check
-        env:
-          UV_PROJECT_ENVIRONMENT: venv
         run: |
           pip install uv
           uv sync --extra pre-commit
 
       - name: Run pre-commit hooks
         run: |
-          source venv/bin/activate
+          source .venv/bin/activate
           pre-commit run --all-files
